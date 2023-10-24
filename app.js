@@ -4,7 +4,7 @@ const sqlite3 = require("sqlite3");
 const path = require("path");
 const dbPath = path.join(__dirname, "moviesData.db");
 const app = express();
-app.use(express());
+app.use(express.json(());
 let db = null;
 
 const initializeDbAndServer = async () => {
